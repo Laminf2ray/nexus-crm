@@ -39,7 +39,7 @@ const ACTIVITIES = [
 ];
 
 // ─── HELPERS ─────────────────────────────────────────────────────────────────
-const fmt = (n) => new Intl.NumberFormat("en-US", { style: "currency", currency: "USD", maximumFractionDigits: 0 }).format(n);
+const fmt = (n) => new Intl.NumberFormat("en-GB", { style: "currency", currency: "GBP", maximumFractionDigits: 0 }).format(n);
 const tagColor = (tag) => {
   const map = { Hot: "#ef4444", Enterprise: "#6366f1", Priority: "#f59e0b", SMB: "#10b981", "Mid-Market": "#3b82f6", EU: "#8b5cf6", Tech: "#06b6d4", AI: "#ec4899" };
   return map[tag] || "#64748b";
